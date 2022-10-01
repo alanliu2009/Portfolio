@@ -1,0 +1,4 @@
+teams.student.drive.DrivePlayer
+100
+teams.student.power.PowerPlayer
+100
