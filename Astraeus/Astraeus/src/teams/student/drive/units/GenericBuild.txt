@@ -1,0 +1,65 @@
+	public MediumTank(DrivePlayer p, Pod pod) {
+		super(p, pod);
+	}
+	
+	@Override
+	protected void drawForUnit(Graphics g) {}
+	
+	public Frame getFrameCounter() { return Frame.MEDIUM; }
+	public int mineralValue() { return 0; }
+	public float getBasePriority() { return 0f; }	
+	
+	@Override
+	protected void frameAndStyle() {
+		setFrame(Frame.MEDIUM); // TODO
+		setStyle(Style.BUBBLE); // TODO
+	}
+
+	@Override
+	protected void determineUpgrades() {
+		switch(attack.enemyPrimaryDamage()) {
+			case ENERGY:
+				// TODO
+				break;
+			case KINETIC:
+				// TODO
+				break;
+			case EXPLOSIVE:
+				// TODO
+				break;
+			
+			default:
+				// TODO
+				break;
+				
+		}
+	}
+	
+	@Override
+	protected void determineWeapons() {
+		switch (attack.enemyPrimaryDefense()) {
+			case Shield:
+				// TODO
+				break;
+			case Plating:
+				// TODO
+				break;
+			
+			default:
+				// TODO
+				break;
+		}
+	}
+
+
+	@Override
+	protected void win() {}
+	
+	@Override
+	protected void attack() {}
+
+	@Override
+	protected void defend() {}
+
+	@Override
+	protected void retreat() {}
